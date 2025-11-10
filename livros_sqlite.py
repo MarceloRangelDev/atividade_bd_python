@@ -16,13 +16,20 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS livros (
 
 # Inserir 5 Livros Fictícios
 # Adicione pelo menos 5 registros de livros na tabela criada.
-cursor.execute('''INSERT INTO livros (titulo, autor, ano, genero, disponivel) VALUES
-('O Senhor dos Anéis', 'J.R.R. Tolkien', 1954, 'Fantasia', 1),
-('O Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasia', 0),
-('A Guerra dos Tronos', 'George R.R. Martin', 1996, 'Fantasia', 1),
-('O Código Da Vinci', 'Dan Brown', 2003, 'Suspense', 0),
-('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', 1997, 'Fantasia', 1)
-''')
+# cursor.execute('''INSERT INTO livros (titulo, autor, ano, genero, disponivel) VALUES
+# ('O Senhor dos Anéis', 'J.R.R. Tolkien', 1954, 'Fantasia', 1),
+# ('O Hobbit', 'J.R.R. Tolkien', 1937, 'Fantasia', 0),
+# ('A Guerra dos Tronos', 'George R.R. Martin', 1996, 'Fantasia', 1),
+# ('O Código Da Vinci', 'Dan Brown', 2003, 'Suspense', 0),
+# ('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', 1997, 'Fantasia', 1)
+# ''')
+
+# Consultar Livros Disponíveis
+# Selecione e exiba todos os livros que estão disponíveis (campo disponivel = 1 ).
+cursor.execute('''SELECT * FROM livros WHERE disponivel = 1''')
+livros_disponiveis = cursor.fetchall()
+for livro in livros_disponiveis:
+    print(livro)
 
 conn.commit()
 conn.close()
