@@ -69,5 +69,14 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS usuario (
     nome TEXT
 )''')
 
+# -- Inserir 5 Usuários
+# -- Insira 5 registros de usuários na tabela usuario
+cursor.execute('''INSERT INTO usuario (nome) VALUES
+('Ana Silva'),
+('Bruno Souza'),
+('Carla Pereira'),
+('Daniel Costa'),
+('Eduardo Lima')''')
+
 conn.commit()
 conn.close()
