@@ -153,56 +153,56 @@ Fonte: https://www.mongodb.com/resources/compare/relational-vs-non-relational-da
 ---
 
 #### Comandos SQL
-1. **Qual é a finalidade do comando SELECT em SQL?**
+1. **Qual é a finalidade do comando SELECT em SQL?**\
 `(Descreva sua função e uso básico)`\
 Ler/consultar dados de tabelas.
 
-2. **O que significam as siglas DML e DDL em bancos de dados?**
-`(Defina e diferencie Data Manipulation Language e Data Definition Language)`
--   **DML**: manipula dados (SELECT, INSERT, UPDATE, DELETE).\
+2. **O que significam as siglas DML e DDL em bancos de dados?**\
+`(Defina e diferencie Data Manipulation Language e Data Definition Language)`\
+-   **DML**: manipula dados (SELECT, INSERT, UPDATE, DELETE).
 -   **DDL**: estrutura do BD (CREATE, ALTER, DROP).
 
-3. **Para que serve a cláusula WHERE em consultas SQL?**
-`(Explique seu papel na filtragem de dados)`
+3. **Para que serve a cláusula WHERE em consultas SQL?**\
+`(Explique seu papel na filtragem de dados)`\
 Filtra registros com base em uma condição.
 
-4. **Por que é fundamental estabelecer uma chave primária (PRIMARY KEY) em tabelas?**
-`(Importância da chave primária)`
+4. **Por que é fundamental estabelecer uma chave primária (PRIMARY KEY) em tabelas?**\
+`(Importância da chave primária)`\
 Garante unicidade, integridade referencial e melhora o desempenho.
 
-5. **Como funciona o comando UPDATE e qual sua sintaxe básica?**
-`(Explique a atualização de registros)`
+5. **Como funciona o comando UPDATE e qual sua sintaxe básica?**\
+`(Explique a atualização de registros)`\
 Atualiza registros existentes.
 
-6. **Qual a função do comando DELETE em SQL?**
-`(Diferença entre DELETE e DROP)`
+6. **Qual a função do comando DELETE em SQL?**\
+`(Diferença entre DELETE e DROP)`\
 Remove dados; difere de DROP, que remove a tabela inteira.
 
-7. **Como a cláusula ORDER BY organiza os resultados de uma consulta?**
-`(Ordenação ascendente e descendente)`
+7. **Como a cláusula ORDER BY organiza os resultados de uma consulta?**\
+`(Ordenação ascendente e descendente)`\
 Ordena resultados (ASC ou DESC).
 Sendo: 
 **ASC**: Ordena resultados de forma ascendente (A-Z).
 **DESC**: Ordena resultados de forma descendente (Z-A).
 
-8. **Para que serve o comando LIMIT em consultas SQL?**
-`(Controle de quantidade de registros retornados)`
+8. **Para que serve o comando LIMIT em consultas SQL?**\
+`(Controle de quantidade de registros retornados)`\
 Restringe número de registros retornados.
 
 ---
 
 #### Outros Conceitos
 
-1. **Por que é importante integrar o banco de dados com a camada de backend da aplicação?**
-`(Relação entre BD e servidor)`
+1. **Por que é importante integrar o banco de dados com a camada de backend da aplicação?**\
+`(Relação entre BD e servidor)`\
 É importante para permitir o controle de acesso, regras de negócio e segurança.
 
-2. **O que são views (visões) em bancos de dados e quais suas vantagens?**
-`(Conceito e utilidade de views)`
+2. **O que são views (visões) em bancos de dados e quais suas vantagens?**\
+`(Conceito e utilidade de views)`\
 São consultas armazenadas que atuam como tabelas virtuais e permitem reutilizar consultas e otimizam a performance.
 
-3. **Quais são as propriedades ACID e por que são cruciais para transações?**
-`(Atomicidade, Consistência, Isolamento, Durabilidade)`
+3. **Quais são as propriedades ACID e por que são cruciais para transações?**\
+`(Atomicidade, Consistência, Isolamento, Durabilidade)`\
 ACID é um conjunto de garantias que tornam as transações seguras e previsíveis:
 
 - **Atomicidade**  
@@ -219,8 +219,8 @@ ACID é um conjunto de garantias que tornam as transações seguras e previsíve
 
 Por que são cruciais: garantem correção, integridade e confiança nas operações — especialmente em cenários concorrentes e críticos (ex.: transferências financeiras), onde falhas, duplicações ou perda de dados seriam inaceitáveis.
 
-4. **O que estabelece o Princípio do Privilégio Mínimo em segurança de bancos de dados?**
-`(Conceito de menor privilégio e suas aplicações)`
+4. **O que estabelece o Princípio do Privilégio Mínimo em segurança de bancos de dados?**\
+`(Conceito de menor privilégio e suas aplicações)`\
 Cada usuário deve ter apenas os acessos necessários.
 
 Estabelece que cada usuário, processo ou componente do sistema deve receber somente os privilégios estritamente necessários para executar suas funções, nem mais nem menos. O objetivo é reduzir a superfície de ataque e limitar o impacto de erros ou comprometimentos.
