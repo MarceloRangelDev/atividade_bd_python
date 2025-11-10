@@ -7,7 +7,7 @@ Atividade_Banco_Dados/
 ├─ .gitignore
 ├─ requirements.txt
 ├─ livros_sqlite.py
-├─ livraria.db
+├─ livraria.db                # (ignorado pelo git)
 └─ README.md                  # Explicação + Questões respondidas
 ```
 ---
@@ -158,7 +158,7 @@ Fonte: https://www.mongodb.com/resources/compare/relational-vs-non-relational-da
 Ler/consultar dados de tabelas.
 
 2. **O que significam as siglas DML e DDL em bancos de dados?**\
-`(Defina e diferencie Data Manipulation Language e Data Definition Language)`\
+`(Defina e diferencie Data Manipulation Language e Data Definition Language)`
 -   **DML**: manipula dados (SELECT, INSERT, UPDATE, DELETE).
 -   **DDL**: estrutura do BD (CREATE, ALTER, DROP).
 
