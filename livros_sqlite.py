@@ -63,7 +63,11 @@ for livro in livros_del_menores_de_1940:
     print(livro)
 print("---Nova tarefa---")
 
-
+# Criar Tabela Usuario
+cursor.execute('''CREATE TABLE IF NOT EXISTS usuario (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT
+)''')
 
 conn.commit()
 conn.close()
