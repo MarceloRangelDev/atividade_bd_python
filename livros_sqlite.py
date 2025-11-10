@@ -78,5 +78,10 @@ cursor.execute('''INSERT INTO usuario (nome) VALUES
 ('Daniel Costa'),
 ('Eduardo Lima')''')
 
+
+# -- Apagar a Tabela Usuario
+# -- Delete completamente a tabela Usuario usando o comando DROP TABLE
+cursor.execute('''DROP TABLE usuario''')
+
 conn.commit()
 conn.close()
