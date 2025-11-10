@@ -30,7 +30,7 @@ cursor.execute('''SELECT * FROM livros WHERE disponivel = 1''')
 livros_disponiveis = cursor.fetchall()
 for livro in livros_disponiveis:
     print(livro)
-
+print("---Nova tarefa---")
 # Atualizar Disponibilidade
 # Escolha um livro e atualize sua disponibilidade (de 1 para 0 ou vice-versa).
 cursor.execute('''UPDATE livros SET disponivel = 0 WHERE id = 1''')
@@ -38,13 +38,32 @@ cursor.execute('''SELECT * FROM livros WHERE id = 1''')
 livros_disponiveis = cursor.fetchall()
 for livro in livros_disponiveis:
     print(livro)
-
+print("---Nova tarefa---")
 # Ordenar Livros por Ano
 # Liste os livros ordenados do mais recente para o mais antigo (ordem decrescente por ano).
 cursor.execute('''SELECT * FROM livros ORDER BY ano DESC''')
 livros_ordenados = cursor.fetchall()
 for livro in livros_ordenados:
     print(livro)
+
+print("---Nova tarefa---")
+    
+# Deletar Livro Antigo
+# Delete um livro cujo ano de publicação seja anterior a 1940.
+cursor.execute('''SELECT * FROM livros WHERE ano < 1940''')
+livros_menores_de_1940 = cursor.fetchall()
+for livro in livros_menores_de_1940:
+    print(livro)
+print("---Antes Delete---")
+cursor.execute('''DELETE FROM livros WHERE ano < 1940''')
+print("---Pós delete---")
+cursor.execute('''SELECT * FROM livros WHERE ano < 1940''')
+livros_del_menores_de_1940 = cursor.fetchall()
+for livro in livros_del_menores_de_1940:
+    print(livro)
+print("---Nova tarefa---")
+
+
 
 conn.commit()
 conn.close()
