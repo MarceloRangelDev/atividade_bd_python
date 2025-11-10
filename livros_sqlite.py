@@ -31,5 +31,13 @@ livros_disponiveis = cursor.fetchall()
 for livro in livros_disponiveis:
     print(livro)
 
+# Atualizar Disponibilidade
+# Escolha um livro e atualize sua disponibilidade (de 1 para 0 ou vice-versa).
+cursor.execute('''UPDATE livros SET disponivel = 0 WHERE id = 1''')
+cursor.execute('''SELECT * FROM livros WHERE id = 1''')
+livros_disponiveis = cursor.fetchall()
+for livro in livros_disponiveis:
+    print(livro)
+
 conn.commit()
 conn.close()
