@@ -154,7 +154,7 @@ Fonte: https://www.mongodb.com/resources/compare/relational-vs-non-relational-da
 
 #### Comandos SQL
 1. **Qual é a finalidade do comando SELECT em SQL?**
-`(Descreva sua função e uso básico)`
+`(Descreva sua função e uso básico)`\
 Ler/consultar dados de tabelas.
 
 2. **O que significam as siglas DML e DDL em bancos de dados?**
