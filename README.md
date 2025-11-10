@@ -24,7 +24,8 @@ Atividade_Banco_Dados/
 
 ### Clone o repositório
 ```bash
-git clone https://github.com/marcelo-mendes/ctbl-backend.git
+git clone https://github.com/MarceloRangelDev/atividade_bd_python.git
+
 ```
 
 
