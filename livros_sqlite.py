@@ -39,5 +39,12 @@ livros_disponiveis = cursor.fetchall()
 for livro in livros_disponiveis:
     print(livro)
 
+# Ordenar Livros por Ano
+# Liste os livros ordenados do mais recente para o mais antigo (ordem decrescente por ano).
+cursor.execute('''SELECT * FROM livros ORDER BY ano DESC''')
+livros_ordenados = cursor.fetchall()
+for livro in livros_ordenados:
+    print(livro)
+
 conn.commit()
 conn.close()
